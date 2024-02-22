@@ -1,13 +1,13 @@
-    <h1>Project Name</h1>
+<h1>Project Name</h1>
 
-    <h2>Introduction</h2>
-    <p>Welcome to <em>Project Name</em>, a project born out of a passion for <em>[insert motivation or inspiration here]</em>. While this may not be the most technically impressive application you'll come across, it holds a special place in my heart as a testament to perseverance and creativity. In this README, I'll walk you through the journey of conceptualizing, building, and reflecting on this project.</p>
+<h2>Introduction</h2>
+<p>Welcome to <em>Project Name</em>, a project born out of a passion for <em>[insert motivation or inspiration here]</em>. While this may not be the most technically impressive application you'll come across, it holds a special place in my heart as a testament to perseverance and creativity. In this README, I'll walk you through the journey of conceptualizing, building, and reflecting on this project.</p>
 
-    <h2>Inspiration</h2>
-    <p>The idea for <em>Project Name</em> was sparked by <em>[insert inspiration here]</em>. I envisioned a solution that <em>[describe what you envisioned the project to achieve]</em>. With this vision in mind, I embarked on a journey to turn this idea into reality.</p>
+<h2>Inspiration</h2>
+<p>The idea for <em>Project Name</em> was sparked by <em>[insert inspiration here]</em>. I envisioned a solution that <em>[describe what you envisioned the project to achieve]</em>. With this vision in mind, I embarked on a journey to turn this idea into reality.</p>
 
-    <h2>Technical Challenge</h2>
-    <p>One of the main technical challenges I encountered was <em>[describe challenge]</em>. I struggled with <em>[explain difficulties or obstacles faced]</em>, but through determination and resourcefulness, I was able to overcome these challenges. This project pushed me to expand my technical skills and think outside the box to find solutions.</p>
+<h2>Technical Challenge</h2>
+<p>One of the main technical challenges I encountered was <em>[describe challenge]</em>. I struggled with <em>[explain difficulties or obstacles faced]</em>, but through determination and resourcefulness, I was able to overcome these challenges. This project pushed me to expand my technical skills and think outside the box to find solutions.</p>
 
     <h2>Solution</h2>
     <p>To address the challenges faced, I implemented <em>[describe solution or approach]</em>. I chose this approach because <em>[explain reasoning behind your choice]</em>. Through careful planning and experimentation, I was able to develop a solution that met the project requirements and exceeded my expectations.</p>
