@@ -1,0 +1,60 @@
+{% extends "main.html"%}
+{% block login%}
+    <a class="login" href="{{ url_for('login') }}">
+        <img src="/static/images/user_white.png">
+        <h4>Login</h4>
+    </a>
+{% endblock login %}
+
+{% block logout %}
+    <a class="login" href="{{ url_for('logout') }}">
+        <img src="/static/images/user_white.png">
+        <h4>Logout</h4>
+    </a>
+{% endblock logout %}
+
+{% block header %}
+        <div class="title">
+            <h1>Hand To Hand</h1>
+            <h2>Anywhere - Anytime</h2>
+        </div>
+
+        <div class="features">
+            <a class="price_sim feat" href="#">
+                <img src="/static/images/calculator.png">
+                <h3>Price Simulator</h3>
+            </a>
+            <a class="agencies feat" href="#">
+                <img src="/static/images/itinerary.png">
+                <h3>Find Agencies</h3>
+            </a>
+            <a class="tracking feat" href="#">
+                <img src="/static/images/find.png">
+                <h3>Track  Package</h3>
+            </a>
+        </div>
+{% endblock header %}
+
+{% block content %}
+        <div class="about" id="about">
+            <h1>Hand To Hand</h1>
+            <p>We're dedicated to simplifying package management for businesses of all sizes. With a focus on user-friendly solutions and cutting-edge technology, we strive to streamline processes and enhance efficiency. Our team is committed to delivering innovative software that meets the evolving needs of our customers, empowering them to succeed in today's fast-paced world.</p>
+        </div>
+        <div class="our_services">
+            <h1>Our Services</h1>
+            <div class="services" id="services">
+                <a class="particular services_box" href="#">
+                    <img src="/static/images/directeur.png">
+                    <h2>Particular</h2>
+                </a>
+                <a class="entreprises services_box" href="#">
+                    <img src="/static/images/poignee-de-main.png">
+                    <h2>Entreprise</h2>
+                </a>
+                <a class="ecomerce services_box" href="#">
+                    <img src="/static/images/panier.png">
+                    <h2>E-Commerce</h2>
+                </a>
+            </div>
+        </div>
+{% endblock content %}

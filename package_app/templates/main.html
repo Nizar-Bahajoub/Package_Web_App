@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename=css_file) }}">
+    <link rel="icon" type="image/png" href="/static/images/bus.png">
+    <title>
+        {% if title %}
+            HTH - {{ title }}
+        {% else %}
+            Hand To Hand
+        {% endif %}
+    </title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <img src="/static/images/logo5.png" class="logo">
+            <div class="navbar">
+                <ul>
+                    <li><a href="/">About us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="/about">Our Network</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            {% if current_user.is_authenticated %}
+                {% block logout %}
+                {% endblock logout %}
+            {% else %}
+                {% block login %}
+                {% endblock login %}
+            {% endif %}
+        </div>
+        {% block header %}
+        {% endblock header %}
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </header>
+    {% block content %}
+    {% endblock content %}
+    <footer>
+        © Copyright Nizar 2024
+    </footer>
+</body>
+</html>

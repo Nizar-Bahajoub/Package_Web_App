@@ -1,0 +1,69 @@
+{% extends "main.html" %}
+{% block header %}
+    <div class="wrapper">
+        <div class="login-form">
+            <h2> Join Us Now</h2>
+            <form method="POST" action="">
+                {{ form.hidden_tag() }}
+                <div class="input_box">
+                    {% if form.username.errors %}
+                        {{ form.username(class="input_field is_invalid") }}
+                        <div class="invalid">
+                            {% for error in form.username.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.username(class="input_field") }}
+                    {% endif %}
+                    {{ form.username.label(class="input_label") }}
+                </div>
+                <div class="input_box">
+                    {% if form.email.errors %}
+                        {{ form.email(class="input_field is_invalid") }}
+                        <div class="invalid">
+                            {% for error in form.email.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.email(class="input_field") }}
+                    {% endif %}
+                    {{ form.email.label(class="input_label") }}
+                </div>
+                <div class="input_box">
+                    {% if form.password.errors %}
+                        {{ form.password(class="input_field is_invalid") }}
+                        <div class="invalid">
+                            {% for error in form.password.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.password(class="input_field") }}
+                    {% endif %}
+                    {{ form.password.label(class="input_label") }}
+                </div>
+                <div class="input_box">
+                    {% if form.confirm_password.errors %}
+                        {{ form.confirm_password(class="input_field is_invalid") }}
+                        <div class="invalid">
+                            {% for error in form.confirm_password.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.confirm_password(class="input_field") }}
+                    {% endif %}
+                    {{ form.confirm_password.label(class="input_label") }}
+                </div>
+                <div class="input_box">
+                    {{ form.submit(class="submit") }}
+                </div>
+            </form>
+        </div>
+        <div class="add_account">
+            <small>Already Have An Account? <a href="{{ url_for('login') }}">Sign In</a></small>
+        </div>
+    </div>
+{% endblock header %}
